@@ -171,6 +171,23 @@ extern enum Item b_message_held_item;
  */
 POKEAGB_EXTERN u8 ball_number_to_ball_processing_index(u16 item_id);
 
+/**
+ * Contains the id of last used item
+ * @address{BPRE,0203AD30}
+ */
+extern enum Item b_last_used_item;
+
+/**
+ * Contains the number of safari ball available
+ * @address{BPRE,02039994}
+ */
+extern u8 b_safari_ball_count;
+
+/**
+ * Contains the id of current move
+ * @address{BPRE,0203B16D}
+ */
+ extern u16 b_cur_move_index;
 
 POKEAGB_END_DECL
 
