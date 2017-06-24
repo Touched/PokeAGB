@@ -214,10 +214,11 @@ extern u16 var_800B;
 extern u16 var_800C;
 
 /**
- * Script temporary variable 0x800D
+ * Script temporary variable 0x800D,
+ * which is the lastresult seen in scripts
  * @address{BPRE,020370BE}
  */
-extern u16 var_800D;
+extern u16 var_800D_lastresult;
 
 /**
  * Script temporary variable 0x800E
