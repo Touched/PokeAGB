@@ -449,6 +449,18 @@ POKEAGB_EXTERN u16 get_item_quantity(enum Item item);
  */
 POKEAGB_EXTERN bool check_item(enum Item item, u8 quantity);
 
+/**
+ * Adds a item to the player's bag
+ * @address{BPRE,0809A084}
+ */
+POKEAGB_EXTERN void bag_add_item(u16 item_id, u16 unknown_maybe_quantity_or_pocket);
+
+/**
+ * Removes quantity of specified item from player's bag
+ * @address{BPRE,0809A1D8}
+ */
+POKEAGB_EXTERN void bag_remove_item(u16 itemID, u16 quantity);
+
 POKEAGB_END_DECL
 
 #endif /* POKEAGB_OVERWORLD_ITEM_H_ */
